@@ -1,0 +1,168 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  width: 80%;
+  max-width: 960px;/*coloca el máximo ancho a un elemento. Impide que el valor de width sea más largo que el valor en max-width*/
+  margin: 0 auto;
+}
+/*HEADER*/
+header img{
+  width: 959px;
+  height: 200px;
+}
+header h1 {
+  font-size: 1.8em;
+  float: left;
+  color: #868181;
+}
+header h2 {
+  font-size: 1.4em;
+  float: left; /*sirve para alinear un elemento, haciendo que el texto de alrededor del mismo se agrupe Sentorno a dicho elemento.*/
+  color: #c35859;
+  font-weight: normal;/*especifica el peso o grueso de la letra*/
+  padding-top: 6px;
+  padding-left: 5px;
+}
+/*MENU*/
+nav {
+  background: #ff6600;
+  padding: 5px 0 10px 0;
+  height: 40px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li:nth-child(1) {
+  background: #fff;
+}/*NTH-CHILD nos permite seleccionar varios elementos hijos de la clase indicando su posición, según un argumento o fórmula.*/
+nav ul li:nth-child(2) {
+  background: #cccccc;
+}
+nav ul li:nth-child(3) {
+  background: #999999;
+}
+nav ul li {
+  float: left;
+  margin: 10px;
+  box-shadow: 0 0 10px #4a4a4a; /*permite proyectar una sombra difuminada desde el marco */
+  border-radius: 1em;
+}
+nav ul li:hover{
+    background: #000;
+}
+nav ul li:visited, nav ul li a:link{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 15px;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+/*ASIDE*/
+aside{
+    width: 200px;
+    float: left;
+    background: #e9e1e1;
+    padding: 8px;
+    border-radius: 15px;
+    min-height: 1000px;/*se utiliza para definir la altura mínima de un elemento dado.*/
+}
+aside p{
+font-size: 0.9em;
+line-height: 1.3em;
+}
+aside img{
+    border-radius: 15px;
+}
+aside.derecha{
+    width: 200px;
+    float: right;
+    background: #fff;
+    border-left: 1px solid #c0c0c0;
+    border-radius: 0;
+}
+/*SECTION*/
+section{
+    width: 500px;
+    float: left;
+    margin-left: 15px;
+}
+article h2, article h3{
+    width: 100%;
+    box-sizing: border-box;
+}
+article h2{
+    background: #fff;
+}
+article h3{
+    background: #726c6d;
+    color: #fff;
+    padding: 3px 5px;
+    font-weight: lighter;/*lighter más delgado y bolder más grueso*/
+}
+article p{
+    font-size: 0.9em;/*especifica la dimensión de la letra*/
+    margin: 10px 0 5px 0;
+    text-align: justify;
+}
+/*ENLACES ASIDE*/
+aside.derecha h2{
+    background: #fff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c35859;
+}
+aside.derecha nav{
+    background: #fff;
+}
+aside.derecha ul{
+    width: 100%;
+    list-style: none;
+    margin-top: 20px;
+}
+aside.derecha ul li{
+    background: none;
+    display: block;/*siempre tiene algo de espacio por encima y debajo, que lo separa de los demás elementos,*/
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+aside.derecha a:link, aside.derecha a:visited{
+    text-decoration: underline;
+    font-size: 12px;
+    color: #a148e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+aside.derecha a:hover{
+    color: #c35859;
+}
+/*FOOTER*/
+#foo
+{
+    height:50px;
+    background-color:cadetblue;
+    color: #fff;
+    width: 110%;
+    max-width: 960px;
+    margin: 0;
+    
+}
+#con{
+    margin-top: 13px;
+    margin-left: 10px;
+}
+#a{
+    color: yellow;
+}
+#b{
+    color: white;
+}
